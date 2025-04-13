@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>linkr</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f5efef;
+        padding: 10px 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: blue;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        margin-left: 800px;
+        flex: 1;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: gray;
+        font-weight: 500;
+      }
+
+      .whatsapp-btn {
+        padding: 8px 16px;
+        background-color: white;
+        border: 2px solid white;
+        color: blue;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .whatsapp-btn:hover {
+        background-color: #e6f4ff;
+      }
+      .ivf-box {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+      }
+      .demo-box {
+        background-color: hwb(217 3% 76%); /* Blue background */
+        color: white; /* White text */
+        padding: 30px;
+        width: 400px;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+      }
+
+      .demo-box h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .demo-box input[type="text"],
+      .demo-box input[type="email"],
+      .demo-box input[type="tel"],
+      .demo-box input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .demo-box input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      .demo-box label {
+        font-size: 14px;
+      }
+
+      .demo-box button {
+        background-color: white;
+        color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .demo-box button:hover {
+        background-color: #e6e6e6;
+      }
+      .ivf-clinic {
+        color: #007bff;
+      }
+      .ivf-clinic p {
+        color: gray;
+      }
+      .card-container {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        gap: 20px;
+        justify-content: center;
+        background-color: #ebe5e5;
+        height: 260px;
+      }
+
+      .card {
+        width: 200px;
+        height: 250px;
+        padding: 20px;
+        border-radius: 10px solid black;
+        background-color: white;
+      }
+      .card h3 {
+        margin-top: 0;
+        color: #007bff;
+      }
+
+      .card p {
+        color: #666;
+      }
+      .card-group1 {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        background-color: lightgrey;
+      }
+      .card-group2 {
+        display: flex;
+        justify-content: center;
+        background-color: lightgrey;
+        margin-top: 5px;
+      }
+      .footer-box {
+        display: flex;
+        justify-content: center;
+        background-color: hwb(211 79% 12%);
+      }
+      .heading {
+        display: flex;
+        justify-content: center;
+      }
+      .heading h1 {
+        color: #007bff;
+      }
+      .copyright {
+        display: flex;
+        justify-content: center;
+      }
+      .copyright p {
+        align-items: center;
+      }
+      .card1 img {
+        height: 250px;
+        width: 400px;
+      }
+      .card-title {
+        color: #007bff;
+      }
+      .card-group {
+        display: flex;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">LIFELINKRS</div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Why Choose Us</a>
+        <a href="#">Benefits</a>
+        <a href="#">FAQs</a>
+      </div>
+      <button class="whatsapp-btn">WhatsApp Us</button>
+    </nav>
+    <div class="ivf-box">
+      <div class="ivf-clinic">
+        <h1>
+          TAILORED IVF MANAGEMENT<br />
+          SOFTWARE FOR CLINIC
+        </h1>
+        <p>
+          Your All-in-One Software for Enhanced IVF Clinic Management and
+          Patient Experience
+        </p>
+      </div>
+
+      <div class="demo-box">
+        <h2>Schedule a Free Demo</h2>
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email Address" />
+        <input type="tel" placeholder="Phone Number" />
+        <input type="password" placeholder="Set Password" />
+
+        <p>
+          <input type="checkbox" id="terms" />
+          <label for="terms"
+            >I agree and accept the
+            <a href="#" style="color: white; text-decoration: underline"
+              >Terms and Conditions</a
+            >.</label
+          >
+        </p>
+
+        <button>Schedule Demo</button>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card-group1">
+        <div class="card">
+          <h3>Data Protection</h3>
+          <p>
+            Protect Data Leakage With <br />
+            Strict Data Protection
+          </p>
+        </div>
+        <div class="card">
+          <h3>Built In Task Manager</h3>
+          <p>
+            Never Miss a Task,<br />
+            Get Notified at Each Approval
+          </p>
+        </div>
+        <div class="card">
+          <h3>Easy Walkthrough</h3>
+          <p>
+            Access Patient Info <br />
+            Anytime, From any Screen
+          </p>
+        </div>
+      </div>
+      <div class="card-group2">
+        <div class="card">
+          <h3>Map Patients Journey</h3>
+          <p>
+            Step Linked Progression <br />
+            Bar to Know Milestones
+          </p>
+        </div>
+        <div class="card">
+          <h3>One Stop Solution</h3>
+          <p>
+            No Need For Multiple <br />
+            Software Just Use One
+          </p>
+        </div>
+        <div class="card">
+          <h3>Ai Integration</h3>
+          <p>
+            TTS and Ai Integrate <br />
+            to Reduce Humane Error
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card1">
+        <img src="C:\Users\prince\Desktop\lifelinkr\photos\life1.jpg" />
+        <div class="card-body">
+          <h5 class="card-title">
+            LifeLinkr Introduces Complete IPD Module: Enhancing In-Patient
+            Management at an Additional ₹600
+          </h5>
+          <p class="card-text">
+            April 12, 2025 | Product Update LifeLinkr has launched a new
+            Complete IPD (In-Patient Department) Module, now available as an
+            add-on for ₹600+ per month.…
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Read more</small>
+          </p>
+        </div>
+      </div>
+      <div class="card1">
+        <img
+          src="C:\Users\prince\Desktop\lifelinkr\photos\life2.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            LifeLinkr Introduces Goods Return Notes to Simplify Returns and
+            Improve Billing Accuracy
+          </h5>
+          <p class="card-text">
+            Introducing the GRN Feature April 11, 2025 | Product Update
+            LifeLinkr has launched a new feature—Goods Return Notes (GRNs)—to
+            help clinics and pharmacies efficiently manage…
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Read more</small>
+          </p>
+        </div>
+      </div>
+      <div class="card1">
+        <img
+          src="C:\Users\prince\Desktop\lifelinkr\photos\life3.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            LifeLinkr Adds In-Depth Bill Modification Feature to Prevent Errors
+            in IVF Clinic Billing
+          </h5>
+          <p class="card-text">
+            April 10, 2025 – New Delhi – LifeLinkr has rolled out a smart and
+            highly requested update – the In-Depth Bill Modification feature
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Read more</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>
+    <div class="footer-box">
+      <div class="part1">
+        <div class="heading">
+          <h1>LIFELINKR</h1>
+        </div>
+        <div class="copyright">
+          <p>
+            All Rights Reserved 2023-24 Copyright - LifeLinkr <br />
+            Privacy Policy | Ads Policy | Data Privacy | Disclaimer | User
+            Agreement | Intellectual Property Rights | Cookies <br />
+            Policy | Refund Policy | Contact Information | Accessibility
+            Statement | Security Policy | GDPR Compliance
+          </p>
+        </div>
+      </div>
+      <div class="part2">
+        <h1>SCHEDULE YOUR DEMO</h1>
+        <input type="text" placeholder="Enter Your Phone Number" />
+        <input type="text" placeholder="Book Appointment" />
+      </div>
+    </div>
+  </footer>
+</html>
